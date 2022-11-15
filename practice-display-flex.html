@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        body{
+            background-color: rgb(77, 77, 142);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        box-sizing: border-box;
+        }
+        .navbar{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            
+    justify-items: center;
+    justify-content: space-between;
+            background-color: yellow;
+          padding: 0 20px;
+         
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            
+        }
+        .navbar ul li{
+            padding-left: 50px;
+        }
+        .navbar ul li a{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            color: black;
+        }
+       .navbar span{
+        font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            color:black;
+       } 
+       .row{
+        display: flex;
+        height: 500px;
+        margin: 20px;
+        /* border: 3px; */
+        /* border-color: aqua; */
+        /* border-style: solid; */
+        border-radius: 10px;
+        background-color: violet;
+       }
+       .col1{
+        margin: 20px;
+        /* border: 3px; */
+        /* border-color: aqua; */
+        /* border-style: solid; */
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 30px;
+        background-color: aqua;
+       }
+       .col2{
+        margin: 20px;
+        /* border: 3px; */
+        /* border-color: aqua; */
+        /* border-style: solid; */
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 30px;
+        background-color: aqua;
+       }
+       .col3{
+        flex-basis: 400%;
+        margin: 20px;
+        /* border: 3px; */
+        /* border-color: aqua; */
+        /* border-style: solid; */
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 30px;
+        background-image: url("download.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+       }
+       button:hover{
+        /* width: 80px;
+        height: 40px; */
+        /* font: 20px solid yellow; */
+        background-color: blue;
+        border-radius: 8px;
+        color: yellow;
+       }
+       footer{
+        margin: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <span>Mytri Movie Makers</span>
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reiciendis quam omnis rem expedita incidunt atque dicta, iste libero! Harum, sapiente! Numquam aliquam a quasi consectetur eius dignissimos rem iure nemo consequatur. Laudantium inventore earum eveniet voluptates nostrum, deleniti nihil exercitationem quibusdam sint vitae labore, sapiente voluptatum modi. Quae, quisquam? Fugit amet non a distinctio magni dolor suscipit fugiat ducimus possimus ad esse, eaque beatae iste inventore odio. Tempora minus repudiandae adipisci ex. Exercitationem accusantium, quo facilis rerum magnam amet.</div>
+            <div class="col2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veritatis itaque incidunt? Nemo, esse? Quaerat eum delectus aliquam, architecto, ratione ipsa voluptate recusandae porro maxime et error ullam adipisci nobis nesciunt minima ex voluptatum vel totam illo ipsum atque debitis enim voluptates quibusdam? Adipisci perspiciatis, necessitatibus eaque, cupiditate rem nisi dolorum error provident beatae eos ut incidunt molestiae dolor. Dolorum odit quam exercitationem cum maiores dolore debitis provident accusantium, eos qui fuga cumque, totam culpa eligendi quibusdam corporis corrupti cupiditate suscipit quasi modi! Sed accusantium impedit, reprehenderit quaerat alias perferendis eligendi nostrum eos asperiores fugiat inventore veritatis, rerum cupiditate ratione!</div>
+            <div class="col3"></div>
+        </div>
+    </section>
+    <footer>
+        <button >Explore</button>
+    </footer>
+</body>
+</html>
