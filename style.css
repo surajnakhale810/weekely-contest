@@ -24,12 +24,14 @@ span{
 .navbar ul{
     list-style: none;
     display: flex;
+   
 }
 .navbar ul li{
     padding: 0 10px;
 }
 .navbar ul li a{
     color: white;
+    /* text-decoration-style: none; */
 }
 .row{
     display: flex;
@@ -50,6 +52,7 @@ p{
     line-height: 20px;
     margin-left: 20px;
     margin-right: 10px;
+    text-align: justify;
 }
 button{
     color: white;
